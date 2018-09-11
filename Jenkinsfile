@@ -4,6 +4,7 @@ pipeline{
         stage('test'){
             step {
                 sh 'env'
+                sh 'echo $GIT_BRANCH'
             }
         }
     }
